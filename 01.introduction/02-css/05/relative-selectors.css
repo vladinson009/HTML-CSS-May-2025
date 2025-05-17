@@ -1,0 +1,15 @@
+section p {
+  font-weight: 800;
+}
+.main-ul > li {
+  font-weight: 900;
+}
+article + article {
+  background-color: palevioletred;
+}
+h2 ~ p {
+  color: blue;
+}
+li.second-li + li > a {
+  color: green;
+}

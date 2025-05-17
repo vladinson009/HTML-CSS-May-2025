@@ -1,0 +1,39 @@
+h1 > span {
+  color: darkred;
+}
+nav ul li a {
+  color: red;
+  text-decoration: none;
+}
+div > article {
+  background-color: gray;
+}
+section + header {
+  color: blue;
+}
+
+#div section {
+  background-color: aqua;
+}
+section + article {
+  background-color: green;
+}
+article > ul > li > img {
+  border: 10px solid red;
+}
+form input {
+  display: block;
+}
+form input[type='text']:nth-child(2n) {
+  background-color: gray;
+}
+form input[type='submit'] {
+  background-color: blue;
+  color: red;
+  padding: 15px;
+  margin: 0 0 0 5%;
+}
+span::before,
+span::after {
+  content: '<<>>';
+}

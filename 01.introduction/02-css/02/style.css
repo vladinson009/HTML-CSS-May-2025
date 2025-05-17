@@ -1,0 +1,16 @@
+div p {
+  color: blue;
+}
+ul > li {
+  list-style-type: lower-greek;
+}
+p + p {
+  background-color: lightgray;
+}
+p ~ span {
+  font-weight: bolder;
+  background-color: aqua;
+}
+span {
+  color: red;
+}

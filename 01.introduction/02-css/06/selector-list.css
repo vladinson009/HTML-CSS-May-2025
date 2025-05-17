@@ -1,0 +1,21 @@
+.container-element {
+  border: black solid 0.5px;
+  margin: 10px 0;
+  padding: 30px 0;
+}
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+  color: gold;
+  font-size: x-large;
+}
+.typography {
+  color: red;
+}
