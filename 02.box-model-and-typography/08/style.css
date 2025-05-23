@@ -1,0 +1,15 @@
+.container {
+  border: 2px solid black;
+  max-width: 300px;
+  max-height: 100px;
+}
+
+.visible {
+  overflow: visible;
+}
+.hidden {
+  overflow: hidden;
+}
+.scroll {
+  overflow: scroll;
+}
