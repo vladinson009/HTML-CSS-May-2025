@@ -1,0 +1,13 @@
+html {
+  --border: 2px solid black;
+}
+.container {
+  border: var(--border);
+  height: 100vh;
+  padding: 0.3em;
+}
+section {
+  border: var(--border);
+  padding: 1em 2em;
+  margin-bottom: 2em;
+}

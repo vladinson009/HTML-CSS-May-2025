@@ -1,0 +1,19 @@
+html {
+  --border: 2px solid black;
+}
+body {
+  border: var(--border);
+}
+div {
+  border: var(--border);
+  margin: 0.3em 0.5em 1em 0.5em;
+}
+.uniform {
+  padding: 20px;
+}
+.non-uniform {
+  padding: 10px 30px 20px 40px;
+}
+.percentage {
+  padding: 5%;
+}

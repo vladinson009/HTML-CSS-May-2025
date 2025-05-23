@@ -1,0 +1,16 @@
+html {
+  --border: 2px solid black;
+  margin: 0 30px;
+}
+div {
+  border: var(--border);
+}
+.uniform {
+  margin: 40px;
+}
+.non-uniform {
+  margin: 10px 50px 20px 60px;
+}
+.negative {
+  margin: -20px;
+}
