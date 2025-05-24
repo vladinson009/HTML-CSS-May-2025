@@ -1,8 +1,19 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
 html {
   font-size: clamp(12px, 16px + 0.5vw, 25px + 1vw);
   line-height: 1.5;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
   margin: 1em;
+  box-sizing: border-box;
+}
+body {
+  font-family: inherit;
 }
 h1,
 h2,
@@ -13,7 +24,7 @@ h6 {
   line-height: 1.2;
   margin-top: 1em;
   margin-bottom: 0.5em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: inherit;
 }
 p,
 ol,
