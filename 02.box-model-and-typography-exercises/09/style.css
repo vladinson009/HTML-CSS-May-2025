@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+.banner {
+  position: relative;
+  background-image: url('images/image1.jpg');
+  background-position: center;
+  background-size: 100%;
+  min-height: 50%;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  text-align: center;
+}
+
+.banner-content h1,
+.banner-content p {
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}

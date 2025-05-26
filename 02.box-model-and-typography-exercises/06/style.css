@@ -1,0 +1,23 @@
+* {
+  --border: 1px solid lightgray;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  border: var(--border);
+}
+
+main {
+  max-width: 600px;
+  margin: 3em auto;
+  padding: 1em;
+}
+details {
+  border: var(--border);
+  padding: 1em;
+}
+details[open] > summary {
+  padding-bottom: 1em;
+}

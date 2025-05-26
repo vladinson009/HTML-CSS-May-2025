@@ -1,0 +1,49 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+html {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  box-sizing: inherit;
+}
+.link a,
+.buttons button {
+  all: unset;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(16, 16, 16);
+  margin: 0.5em;
+  padding: 0.8em;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+:is(.link a, .buttons button):active {
+  color: yellow;
+  background-color: lightblue;
+}
+
+:is(.link, .buttons) > :nth-child(2) {
+  background: lightgray;
+}
+
+:is(.link, .buttons) > :nth-child(3) {
+  background: orange;
+}
+
+:is(.link, .buttons) > :nth-child(4) {
+  background: rgb(227, 227, 112);
+}
+
+:is(.link, .buttons) > :nth-child(5) {
+  border: 1px solid lightgray;
+  background-color: white;
+}
+
+:is(.link, .buttons) > :nth-child(6) {
+  background: lightgray;
+}
+
+.fa-solid {
+  padding-right: 1em;
+}

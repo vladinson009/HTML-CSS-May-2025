@@ -1,0 +1,19 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+
+.site {
+  text-align: center;
+}
+a {
+  display: inline-block;
+  background: #eee;
+  padding: 2em;
+  margin-inline: 0.5em;
+  border-radius: 50%;
+  color: black;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+a:hover {
+  background-color: #090;
+  color: #fff;
+}
