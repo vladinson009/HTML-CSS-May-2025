@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: darkgray;
+}
+strong {
+  padding-bottom: 0.5em;
+}
+.site * {
+  display: inline-block;
+}
+.site {
+  max-width: 300px;
+  margin: 3em auto;
+}
+.card > span :first-child {
+  font-weight: bolder;
+}
+.card {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+}
+.main,
+.footer {
+  padding: 1em;
+  width: 100%;
+}
+.footer > span[title] {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
