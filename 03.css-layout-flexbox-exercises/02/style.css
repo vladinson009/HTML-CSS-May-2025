@@ -1,8 +1,6 @@
 html {
   box-sizing: border-box;
   font-size: clamp(14px, 1rem + 0.25vw, 16px);
-  --clr-silver: rgba(0, 0, 0, 0.575);
-  --clr-border: rgba(0, 0, 0, 0.111);
 }
 *,
 *::before,
@@ -14,11 +12,47 @@ html {
 body {
   background-color: lightgray;
   margin: 2rem 3rem;
-}
-.site {
-  border: 2px solid green;
-}
-.section-container {
-  border: 2px solid red;
   display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 2em;
+}
+
+.section-container {
+  display: flex;
+  width: 100%;
+
+  background-color: white;
+  gap: 1em;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+.section-container > * {
+  border: 2px solid #eee;
+  padding: 1em;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.section-container > header,
+.section-container > footer {
+  flex-basis: 100%;
+}
+.section-container > main {
+  flex-basis: 60%;
+}
+.section-container > aside {
+  flex-basis: 30%;
+}
+.left-sidebar > header {
+  order: 1;
+}
+.left-sidebar > main {
+  order: 3;
+}
+.left-sidebar > aside {
+  order: 2;
+}
+.left-sidebar > footer {
+  order: 4;
 }
