@@ -1,0 +1,38 @@
+@media (width <= 600px) {
+  nav > ul {
+    display: none;
+  }
+  .checkbtn {
+    display: inline-block;
+  }
+  nav {
+    flex-direction: row-reverse;
+  }
+  .site-header {
+    position: relative;
+
+    & > i {
+      position: relative;
+      top: 38%;
+      left: 45%;
+    }
+  }
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-text {
+      width: 35ch;
+    }
+    .about-header {
+      bottom: 0;
+    }
+  }
+  .gallery {
+    /* margin: 0; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
