@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css2?family=Margarine&display=swap);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Margarine;
+}
+body {
+  background-color: rgb(254, 240, 228);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3em;
+}
+i {
+  color: rgb(35, 143, 230);
+  margin-right: 1em;
+}
+.container {
+  display: flex;
+  gap: 1em;
+  line-height: 1.6em;
+}
+.left,
+.right {
+  box-shadow: 0 1em 2em 1em rgb(0, 0, 0, 0.2);
+  padding: 1em;
+}
+.left {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3em;
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-bottom: 1em;
+    gap: 0.7em;
+  }
+  ul::after {
+    padding-top: 1em;
+    content: '';
+    width: 100%;
+    border-bottom: 2px solid gray;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .progress {
+    background-color: rgb(41, 145, 230);
+    font-size: 0.9em;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    height: 2.5ch;
+  }
+  .progress1 {
+    width: 90%;
+  }
+  .progress2 {
+    width: 80%;
+  }
+  .progress3 {
+    width: 75%;
+  }
+  .progress4 {
+    width: 50%;
+  }
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 1em;
+  width: 65%;
+  padding-bottom: 3em;
+  .work {
+    text-align: center;
+    padding-bottom: 2em;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  div:not(:last-child)::after {
+    display: flex;
+    padding-top: 0.2em;
+    content: '';
+    width: 100%;
+    border-bottom: 2px solid gray;
+  }
+
+  .title {
+    color: rgb(128, 118, 112);
+  }
+  .date {
+    color: rgb(41, 145, 230);
+  }
+  .lorem {
+    font-size: 0.8em;
+  }
+}
