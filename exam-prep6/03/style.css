@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css2?family=Karla&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap);
+/* (Karla and Cormorant Infant) */
+/* 
+Karla Font-size – 18px
+Cormorant Infant
+ - Font-size for big title – 90px
+ - Font-size for other text – 16px
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Karla';
+  font-size: 18px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header {
+  background-image: url(./images/poster.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .inner {
+    background-color: rgb(0, 0, 0, 0.3);
+  }
+}
+.logo {
+  width: 10ch;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5em 4em;
+  color: white;
+}
+.ul {
+  font-size: 1.5em;
+  display: flex;
+  list-style-type: none;
+  gap: 2em;
+}
+.hello {
+  position: relative;
+  font-family: 'Cormorant Infant';
+  color: white;
+  display: flex;
+  height: 1000px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13em;
+  text-align: center;
+  h1 {
+    font-size: 6.3em;
+  }
+  p {
+    font-size: 1.5em;
+    max-width: 55ch;
+    padding-bottom: 10em;
+  }
+  h1,
+  p {
+    position: relative;
+    top: 29%;
+  }
+}
+.first-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 2em 6em;
+  background-color: rgb(248, 241, 232);
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+    width: 60%;
+
+    h2 {
+      font-size: 4.3em;
+      font-family: 'Cormorant Infant';
+      line-height: 0.9;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
+.second-section {
+  background-color: rgb(225, 71, 72);
+  padding-block: 3em 4em;
+  color: white;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    h3 {
+      font-size: 1.7em;
+      font-weight: bolder;
+    }
+    p {
+      width: 30ch;
+      font-size: 1.3em;
+      text-align: center;
+    }
+  }
+}
+.third-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 5em 6em;
+  background-color: rgb(248, 241, 232);
+  a {
+    padding: 0.5em 1em;
+    width: fit-content;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.3em;
+  }
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    justify-content: center;
+    gap: 5em;
+    h2 {
+      font-family: 'Cormorant Infant';
+      font-size: 90px;
+      text-align: center;
+      line-height: 1;
+    }
+    p {
+      font-size: 1.5em;
+      opacity: 0.6;
+    }
+  }
+}
+.fourth-section {
+  background-color: rgb(225, 71, 72);
+  padding-block: 6em 4em;
+  color: white;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+    h2 {
+      font-size: 90px;
+      font-family: 'Cormorant Infant';
+    }
+    p {
+      width: 60%;
+      font-size: 1.3em;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      background-color: rgb(250, 216, 122);
+      color: rgb(81, 97, 80);
+      padding: 1em 1.5em;
+      border-radius: 2em;
+    }
+  }
+}
+footer {
+  background-color: rgb(53, 43, 42);
+  padding: 3em 10em 4em 10em;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    max-width: 48ch;
+    color: white;
+
+    .footer {
+      opacity: 0.4;
+    }
+  }
+}
