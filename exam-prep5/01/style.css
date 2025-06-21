@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  --placeholder-clr: rgba(192, 192, 192, 0.613);
+
+  font-family: 'Kode Mono';
+}
+body {
+  background-color: rgb(193, 189, 187);
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+a,
+input[type='button'] {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(28, 176, 136);
+  padding: 0.8em 3em;
+}
+.site {
+  background-color: rgb(36, 50, 60);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 1.5em;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.login {
+  background-color: rgb(67, 83, 89);
+  color: rgb(125, 143, 138);
+  &:hover {
+    color: white;
+    background-color: rgb(25, 154, 119);
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  width: 100%;
+  legend {
+    align-self: center;
+    color: white;
+    font-size: 1.2em;
+  }
+  input:not(input[type='button']) {
+    background-color: rgb(36, 50, 60);
+    border: 1px solid var(--placeholder-clr);
+    height: 2em;
+  }
+  input[type='button'] {
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  label {
+    position: absolute;
+    bottom: 1px;
+    left: 5px;
+    padding-left: 5px;
+    color: var(--placeholder-clr);
+    span {
+      color: rgb(28, 176, 136);
+    }
+  }
+}
+.relative {
+  position: relative;
+  width: 100%;
+}
+.flex-row {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+.flex-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: stretch;
+  align-items: center;
+  gap: 1em;
+  input {
+    width: 100%;
+  }
+}
